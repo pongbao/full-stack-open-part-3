@@ -1,0 +1,35 @@
+{
+  "name": "phonebook-backend",
+  "version": "0.0.1",
+  "description": "A repository for the Part 3 exercises of the Full Stack Open Course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\"",
+    "build:ui": "cd ../full-stack-open/2 Communicating with Server/phonebook/ && npm run build && xcopy build \"..\\..\\..\\full-stack-open-part-3\\build\" /E /I /Y",
+    "deploy": "fly deploy",
+    "deploy:full": "npm run build:ui && npm run deploy",
+    "logs:prod": "fly logs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pongbao/full-stack-open-part-3.git"
+  },
+  "author": "Zedrick Torres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pongbao/full-stack-open-part-3/issues"
+  },
+  "homepage": "https://github.com/pongbao/full-stack-open-part-3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

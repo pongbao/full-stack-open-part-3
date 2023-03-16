@@ -1,0 +1,41 @@
+GET http://localhost:3001/api/persons/2
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Samantha Lee",
+    "number": "555-123-4567"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Samantha Lee",
+    "number": ""
+}
+
+###
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "",
+    "number": "555-123-4567"
+}
+
+###
+DELETE http://localhost:3001/api/persons/36597
+
+###
+PUT http://localhost:3001/api/persons/6412eec89cf00d1a10507c2b
+Content-Type: application/json
+
+{
+    "name": "Samantha Lee",
+    "number": "555-123-4567"
+}
